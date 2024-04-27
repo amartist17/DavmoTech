@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer-theme-default.css">
+
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+
+<body class="sticky-header">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="far fa-angle-double-up"></i>
+    </a>
+
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+
+    <div class="my_switcher d-none d-lg-block">
+        <ul>
+            <li title="Light Mode">
+                <a href="javascript:void(0)" class="setColor light" data-theme="light">
+                    <i class="fal fa-lightbulb-on"></i>
+                </a>
+            </li>
+            <li title="Dark Mode">
+                <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
+                    <i class="fas fa-moon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-wrapper" class="main-wrapper">
+
+        <!--=====================================-->
+        <!--=        Header Area Start       	=-->
+        <!--=====================================-->
+        <%- include('header') %>
+        <!--=====================================-->
+        <!--=       Breadcrumb Area Start       =-->
+        <!--=====================================-->
+        <div class="breadcrum-area breadcrumb-banner">
+            <div class="container">
+                <div class="section-heading heading-left" data-sal="slide-right" data-sal-duration="1000" data-sal-delay="300">
+                    <h1 class="title h2">Everything you need for your online buisness</h1>
+                    <p>Offering a range of specialized services in web, mobile, and design to advance your business's digital strategy.</p>
+                </div>
+                <div class="banner-thumbnail" data-sal="slide-up" data-sal-duration="1000" data-sal-delay="400">
+                    <img class="paralax-image" src="assets/media/banner/banner-thumb-4.png" alt="Illustration">
+                </div>
+            </div>
+            <ul class="shape-group-8 list-unstyled">
+                <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
+                    <img src="assets/media/others/bubble-9.png" alt="Bubble">
+                </li>
+                <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
+                    <img src="assets/media/others/bubble-21.png" alt="Bubble">
+                </li>
+                <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
+                    <img src="assets/media/others/line-4.png" alt="Line">
+                </li>
+            </ul>
+        </div>
+
+        <!--=====================================-->
+        <!--=       Experts  Area Start        =-->
+        <!--=====================================-->
+        <section class="section section-padding expert-counterup-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="section-heading heading-left">
+                            <span class="subtitle">Experts in field</span>
+                            <h2>What makes us special?</h2>
+                            <p class="mb--50">
+                              With a proven track record in tech solutions, we drive growth and efficiency for modern businesses. Your success is our mission.</p>
+                            <a href="/contact" class="axil-btn btn-large btn-fill-primary">Reach Us</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-xl-1">
+                        <div class="row" id="no-equal-gallery">
+                            <div class="col-sm-6 no-equal-item" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                                <div class="counterup-progress counterup-style-2 active">
+                                    <div class="icon">
+                                        <img class="dark-icon" src="assets/media/icon/icon-10.png" alt="Icon">
+                                        <img class="light-icon" src="assets/media/icon/icon-7.png" alt="Icon">
+                                    </div>
+                                    <div class="count-number h2">
+                                        <span class="number count" data-count="100">100</span>
+                                        <span class="symbol">+</span>
+                                    </div>
+                                    <h6 class="title">Happy Clients</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mt--90 mt_md--0 no-equal-item" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                                <div class="counterup-progress counterup-style-2">
+                                    <div class="icon">
+                                        <img class="dark-icon" src="assets/media/icon/icon-11.png" alt="Icon">
+                                        <img class="light-icon" src="assets/media/icon/icon-8.png" alt="Icon">
+                                    </div>
+                                    <div class="count-number h2">
+                                        <span class="number count" data-count="360">360</span>
+                                        <span class="symbol">+</span>
+                                    </div>
+                                    <h6 class="title">Projects deliverd</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 no-equal-item" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                                <div class="counterup-progress counterup-style-2">
+                                    <div class="icon">
+                                        <img class="dark-icon" src="assets/media/icon/icon-12.png" alt="Icon">
+                                        <img class="light-icon" src="assets/media/icon/icon-9.png" alt="Icon">
+                                    </div>
+                                    <div class="count-number h2">
+                                        <span class="number count" data-count="60">60</span>
+                                        <span class="symbol">+</span>
+                                    </div>
+                                    <h6 class="title">Specialist</h6>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 no-equal-item" data-sal="slide-up" data-sal-duration="800" data-sal-delay="400">
+                                <div class="counterup-progress counterup-style-2">
+                                    <div class="icon">
+                                        <img class="dark-icon" src="assets/media/icon/icon-exp-light.png" alt="Icon">
+                                        <img class="light-icon" src="assets/media/icon/icon-exp.png" alt="Icon">
+                                    </div>
+                                    <div class="count-number h2">
+                                        <span class="number count" data-count="10">10</span>
+                                        <span class="symbol">+</span>
+                                    </div>
+                                    <h6 class="title">Years of operation</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=====================================-->
+        <!--=       Service  Area Start        =-->
+        <!--=====================================-->
+        <section class="section section-padding bg-color-light">
+            <div class="container">
+                <div class="section-heading heading-left">
+                    <span class="subtitle">What We Can Do For You</span>
+                    <h2 class="title">Services we can <br> help you with</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-1.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-design.html">Design</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-design.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="200">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-2.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-development.html">Development</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-development.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-3.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-marketing.html">Online Marketing</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-marketing.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-4.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-business.html">Business</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-business.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-5.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-technology.html">Technology</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-technology.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-sal="slide-up" data-sal-duration="800" data-sal-delay="300">
+                        <div class="services-grid service-style-2">
+                            <div class="thumbnail">
+                                <img src="assets/media/icon/icon-6.png" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h5 class="title"> <a href="service-content-strategy.html">Content strategy</a></h5>
+                                <p>Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.</p>
+                                <a href="service-content-strategy.html" class="more-btn">Find out more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=====================================-->
+        <!--=      About  Quality Area Start    =-->
+        <!--=====================================-->
+        <section class="section section-padding bg-color-dark pb--80 pb_lg--40 pb_md--20">
+          <div class="container">
+              <div class="section-heading heading-light-left mb--100">
+                  <span class="subtitle">Our Values</span>
+                  <h2 class="title">Custom-Crafted Technology Solutions
+                  </h2>
+                  <p class="opacity-50">Your unique challenges require bespoke solutions. We delve into the specifics of your business to build technology solutions that are not just effective but are a perfect fit for your needs.</p>
+              </div>
+              <div class="row">
+                  <div class="col-lg-4">
+                      <div class="about-quality">
+                          <h3 class="sl-number">1</h3>
+                          <h5 class="title">Personalized Solutions Tailored to Your Needs</h5>
+                          <p>We go beyond one-size-fits-all solutions, offering customization that reflects your unique brand identity and meets your specific business goals.</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="about-quality active">
+                          <h3 class="sl-number">2</h3>
+                          <h5 class="title">Cutting-Edge Technology and Innovation</h5>
+                          <p>Harnessing the latest technology, we craft digital experiences that are innovative, efficient, and ahead of the curve.</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="about-quality">
+                          <h3 class="sl-number">3</h3>
+                          <h5 class="title">Exceptional Quality with Attention to Detail</h5>
+                          <p>Quality is our non-negotiable. We deliver top-tier, detail-oriented work that ensures your digital presence is second to none.</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="about-quality">
+                          <h3 class="sl-number">4</h3>
+                          <h5 class="title">Transparent Communication and Collaboration</h5>
+                          <p>We keep the lines of communication open, fostering a transparent and collaborative process that turns visions into reality.</p>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="about-quality">
+                          <h3 class="sl-number">5</h3>
+                          <h5 class="title">Dedicated Support and Growth Partnership</h5>
+                          <p>Our support continues well past launch. We're committed to your ongoing success, offering dedicated assistance to nurture your growth.</p>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          <ul class="list-unstyled shape-group-10">
+              <li class="shape shape-1"><img src="/assets/media/others/circle-1.png" alt="Circle"></li>
+              <li class="shape shape-2"><img src="/assets/media/others/line-3.png" alt="Circle"></li>
+              <li class="shape shape-3"><img src="/assets/media/others/bubble-5.png" alt="Circle"></li>
+          </ul>
+      </section>
+        <!--=====================================-->
+        <!--=     Call To Action Area Start     =-->
+        <!--=====================================-->
+        <section class="section call-to-action-area">
+            <div class="container">
+                <div class="call-to-action">
+                    <div class="section-heading heading-light">
+                        <span class="subtitle">Let's Work Together</span>
+                        <h2 class="title">Need a successful project?</h2>
+                        <a href="contact.html" class="axil-btn btn-large btn-fill-white">Estimate Project</a>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="larg-thumb" data-sal="zoom-in" data-sal-duration="600" data-sal-delay="100">
+                            <img class="paralax-image" src="assets/media/others/chat-group.png" alt="Chat">
+                        </div>
+                        <ul class="list-unstyled small-thumb">
+                            <li class="shape shape-1" data-sal="slide-right" data-sal-duration="800" data-sal-delay="400">
+                                <img class="paralax-image" src="assets/media/others/laptop-poses.png" alt="Laptop">
+                            </li>
+                            <li class="shape shape-2" data-sal="slide-left" data-sal-duration="800" data-sal-delay="300">
+                                <img class="paralax-image" src="assets/media/others/bill-pay.png" alt="Bill">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-unstyled shape-group-9">
+                <li class="shape shape-1"><img src="assets/media/others/bubble-12.png" alt="Comments"></li>
+                <li class="shape shape-2"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
+                <li class="shape shape-3"><img src="assets/media/others/bubble-13.png" alt="Comments"></li>
+                <li class="shape shape-4"><img src="assets/media/others/bubble-14.png" alt="Comments"></li>
+                <li class="shape shape-5"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
+                <li class="shape shape-6"><img src="assets/media/others/bubble-15.png" alt="Comments"></li>
+                <li class="shape shape-7"><img src="assets/media/others/bubble-16.png" alt="Comments"></li>
+            </ul>
+        </section>
+        <!--=====================================-->
+        <!--=        Footer Area Start       	=-->
+        <!--=====================================-->
+        <%- include('footer') %>
+
+
+
+
+        <!--=====================================-->
+        <!--=       Offcanvas Menu Area       	=-->
+        <!--=====================================-->
+        <%- include('offcanvas') %>
+    </div>
+
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/sal.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/tilt.js"></script>
+    <script src="assets/js/vendor/green-audio-player.min.js"></script>
+    <script src="assets/js/vendor/jquery.nav.js"></script>
+
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

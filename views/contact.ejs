@@ -1,233 +1,216 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-  <!-- Added by HTTrack --><meta
-    http-equiv="content-type"
-    content="text/html;charset=utf-8"
-  /><!-- /Added by HTTrack -->
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="author" content="SemiColonWeb" />
+<html class="no-js" lang="en">
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/bootstrap.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/style.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/dark.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/font-icons.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/animate.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/magnific-popup.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://themes.semicolonweb.com/html/canvas/v5/css/responsive.css"
-      type="text/css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/media/favicon.png">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/green-audio-player.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer-theme-default.css">
 
-    <title>Contact</title>
-  </head>
-  <body class="stretched">
-    <div id="wrapper" class="clearfix">
-      <%- include('header'); -%>
+    <!-- Site Stylesheet -->
+    <link rel="stylesheet" href="assets/css/app.css">
 
-      <!-- <section id="page-title">
-        <div class="container clearfix">
-          <h1>Contact</h1>
-          <span>Get in Touch with Us</span>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-          </ol>
-        </div>
-      </section> -->
+</head>
 
-      <section
-        id="map-overlay"
-        style="
-          background-image: url('https://images.unsplash.com/photo-1620393470010-fd62b8ab841d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
-          background-size: cover;
-          background-position: center;
-        "
-      >
-        <div class="container clearfix">
-          <div
-            id="contact-form-overlay-mini"
-            class="clearfix"
-            style="width: 50%"
-          >
-            <div class="fancy-title title-dotted-border">
-              <h3>Send us an Email</h3>
+<body class="sticky-header">
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  	<![endif]-->
+    <a href="#main-wrapper" id="backto-top" class="back-to-top">
+        <i class="far fa-angle-double-up"></i>
+    </a>
+
+    <!-- Preloader Start Here -->
+    <div id="preloader"></div>
+    <!-- Preloader End Here -->
+
+    <div class="my_switcher d-none d-lg-block">
+        <ul>
+            <li title="Light Mode">
+                <a href="javascript:void(0)" class="setColor light" data-theme="light">
+                    <i class="fal fa-lightbulb-on"></i>
+                </a>
+            </li>
+            <li title="Dark Mode">
+                <a href="javascript:void(0)" class="setColor dark" data-theme="dark">
+                    <i class="fas fa-moon"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="main-wrapper" class="main-wrapper">
+
+        <!--=====================================-->
+        <!--=        Header Area Start       	=-->
+        <!--=====================================-->
+        <%- include('header') %>
+        <!--=====================================-->
+        <!--=       Breadcrumb Area Start       =-->
+        <!--=====================================-->
+        <div class="breadcrum-area">
+            <div class="container">
+                <div class="breadcrumb">
+                    <ul class="list-unstyled">
+                        <li><a href="index-1.html">Home</a></li>
+                        <li class="active">Contact</li>
+                    </ul>
+                    <h1 class="title h2">Contact</h1>
+                </div>
             </div>
-            <div class="form-widget">
-              <div class="form-result"></div>
-
-              <form
-                class="nobottommargin"
-                id="template-contactform"
-                name="template-contactform"
-                action=""
-                method="post"
-              >
-                <div class="col_full">
-                  <label for="template-contactform-name"
-                    >Name <small>*</small></label
-                  >
-                  <input
-                    type="text"
-                    id="template-contactform-name"
-                    name="template-contactform-name"
-                    value=""
-                    class="sm-form-control required"
-                  />
-                </div>
-                <div class="col_full">
-                  <label for="template-contactform-email"
-                    >Email <small>*</small></label
-                  >
-                  <input
-                    type="email"
-                    id="template-contactform-email"
-                    name="template-contactform-email"
-                    value=""
-                    class="required email sm-form-control"
-                  />
-                </div>
-                <div class="clear"></div>
-
-                <div class="clear"></div>
-                <div class="col_full">
-                  <label for="template-contactform-subject"
-                    >Subject <small>*</small></label
-                  >
-                  <input
-                    type="text"
-                    id="template-contactform-subject"
-                    name="subject"
-                    value=""
-                    class="required sm-form-control"
-                  />
-                </div>
-                <div class="col_full">
-                  <label for="template-contactform-message"
-                    >Message <small>*</small></label
-                  >
-                  <textarea
-                    class="required sm-form-control"
-                    id="template-contactform-message"
-                    name="template-contactform-message"
-                    rows="6"
-                    cols="30"
-                  ></textarea>
-                </div>
-                <div class="col_full hidden">
-                  <input
-                    type="text"
-                    id="template-contactform-botcheck"
-                    name="template-contactform-botcheck"
-                    value=""
-                    class="sm-form-control"
-                  />
-                </div>
-                <div class="col_full">
-                  <button
-                    style="background-color: black !important"
-                    class="button button-3d nomargin"
-                    type="submit"
-                    id="template-contactform-submit"
-                    name="template-contactform-submit"
-                    value="submit"
-                  >
-                    Send Message
-                  </button>
-                </div>
-                <input
-                  type="hidden"
-                  name="prefix"
-                  value="template-contactform-"
-                />
-              </form>
-            </div>
-          </div>
+            <ul class="shape-group-8 list-unstyled">
+                <li class="shape shape-1" data-sal="slide-right" data-sal-duration="500" data-sal-delay="100">
+                    <img src="assets/media/others/bubble-9.png" alt="Bubble">
+                </li>
+                <li class="shape shape-2" data-sal="slide-left" data-sal-duration="500" data-sal-delay="200">
+                    <img src="assets/media/others/bubble-17.png" alt="Bubble">
+                </li>
+                <li class="shape shape-3" data-sal="slide-up" data-sal-duration="500" data-sal-delay="300">
+                    <img src="assets/media/others/line-4.png" alt="Line">
+                </li>
+            </ul>
         </div>
+        <!--=====================================-->
+        <!--=       Contact  Area Start        =-->
+        <!--=====================================-->
+        <section class="section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contact-form-box shadow-box mb--30">
+                            <h3 class="title">Get a free Keystroke quote now</h3>
+                            <form method="POST" action="https://new.axilthemes.com/demo/template/abstrak/mail.php" class="axil-contact-form">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" name="contact-name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" name="contact-email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Company</label>
+                                    <input type="text" class="form-control" name="contact-company">
+                                </div>
+                                <div class="form-group mb--40">
+                                    <label>How can we help you?</label>
+                                    <textarea name="contact-message" id="contact-message" class="form-control textarea" cols="30" rows="4"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn">Get Pricing Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 offset-xl-1">
+                        <div class="contact-info mb--100 mb_md--30 mt_md--0 mt--150">
+                            <h4 class="title">Phone</h4>
+                            <p style="width: 100%;">Our customer care is open from Mon-Fri, 10:00 am to 6:00 pm</p>
+                            <h4 class="phone-number" style="letter-spacing: 2px;"><a href="tel:919891541985">(+91) 9891541985</a></h4>
+                            <h4 class="phone-number" style="letter-spacing: 2px;"><a href="tel:919811468729">(+91) 9811468729</a></h4>
+                        </div>
+                        <div class="contact-info mb--30" >
+                            <h4 class="title">Email</h4>
+                            <p>Our support team will get back to in 48-h during standard business hours.</p>
+                            <h4 class="phone-number" style="letter-spacing: 2px;"><a href="mailto:care@davmotech.com">care@davmotech.com</a></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-unstyled shape-group-12">
+                <li class="shape shape-1"><img src="assets/media/others/bubble-2.png" alt="Bubble"></li>
+                <li class="shape shape-2"><img src="assets/media/others/bubble-1.png" alt="Bubble"></li>
+                <li class="shape shape-3"><img src="assets/media/others/circle-3.png" alt="Circle"></li>
+            </ul>
+        </section>
 
-        <!-- <section id="google-map" class="gmap"></section> -->
-      </section>
+        <!--=====================================-->
+        <!--=       Location  Area Start        =-->
+        <!--=====================================-->
+        <section class="section section-padding bg-color-dark overflow-hidden">
+            <div class="container">
+                <div class="section-heading heading-light-left">
+                    <span class="subtitle">Find Us</span>
+                    <h2 class="title">Our office</h2>
+                </div>
+                <div class="row justify-center">
+                    
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="office-location">
+                            <div class="thumbnail">
+                                <img src="assets/media/others/location-3.png" alt="Office">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">Delhi</h4>
+                                <p>#4/55, 3rd Floor ,Moti Nagar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div class="office-location">
+                          <div class="thumbnail">
+                              <img src="assets/media/others/location-4.png" alt="Office">
+                          </div>
+                          <div class="content">
+                              <h4 class="title">Haryana</h4>
+                              <p>Lorem ipsum dolor sit.</p>
+                          </div>
+                      </div>
+                  </div>
+                    
+                </div>
+            </div>
+            <ul class="shape-group-11 list-unstyled">
+                <li class="shape shape-1"><img src="assets/media/others/line-6.png" alt="line"></li>
+                <li class="shape shape-2"><img src="assets/media/others/circle-3.png" alt="line"></li>
+            </ul>
+        </section>
+        <!--=====================================-->
+        <!--=        Footer Area Start       	=-->
+        <!--=====================================-->
+        <%- include('footer') %>
 
-      <%- include('footer'); -%>
+
+
+
+        <!--=====================================-->
+        <!--=       Offcanvas Menu Area       	=-->
+        <!--=====================================-->
+        <%- include('offcanvas') %>
 
     </div>
 
-    <div id="gotoTop" class="icon-angle-up"></div>
+    <!-- Jquery Js -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendor/odometer.min.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/sal.js"></script>
+    <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
+    <script src="assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="assets/js/vendor/tilt.js"></script>
+    <script src="assets/js/vendor/green-audio-player.min.js"></script>
+    <script src="assets/js/vendor/jquery.nav.js"></script>
 
-    <script
-      data-cfasync="false"
-      src="https://themes.semicolonweb.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script src="https://themes.semicolonweb.com/html/canvas/v5/js/jquery.js"></script>
-    <script src="https://themes.semicolonweb.com/html/canvas/v5/js/plugins.js"></script>
+    <!-- Site Scripts -->
+    <script src="assets/js/app.js"></script>
+</body>
 
-    <script src="https://themes.semicolonweb.com/html/canvas/v5/js/functions.js"></script>
-    <script src="https://maps.google.com/maps/api/js?key=AIzaSyCzkxzbEni5vR_Ugt1De8gBzrLX3236bnA"></script>
-    <script src="https://themes.semicolonweb.com/html/canvas/v5/js/jquery.gmap.js"></script>
-    <script>
-      $("#google-map").gMap({
-        address: "Melbourne, Australia",
-        maptype: "ROADMAP",
-        zoom: 14,
-        markers: [
-          {
-            address: "Melbourne, Australia",
-            html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Envato</span></h4><p class="nobottommargin">Our mission is to help people to <strong>earn</strong> and to <strong>learn</strong> online. We operate <strong>marketplaces</strong> where hundreds of thousands of people buy and sell digital goods every day, and a network of educational blogs where millions learn <strong>creative skills</strong>.</p></div>',
-            icon: {
-              image: "images/icons/map-icon-red.png",
-              iconsize: [32, 39],
-              iconanchor: [32, 39],
-            },
-          },
-        ],
-        doubleclickzoom: false,
-        controls: {
-          panControl: true,
-          zoomControl: true,
-          mapTypeControl: true,
-          scaleControl: false,
-          streetViewControl: false,
-          overviewMapControl: false,
-        },
-      });
-    </script>
-    <script
-      defer
-      src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
-      integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
-      data-cf-beacon='{"rayId":"796ef1c0e81decb5","token":"0627f0b8b73941069bc19139e63db853","version":"2022.11.3","si":100}'
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
